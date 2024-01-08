@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叠起来的四个方块</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        background-color: skyblue;
+        height: 500px;
+        width: 500px;
+        padding: 20px;
+        position: relative;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+    }
+    .box1{
+        background-color: gray;
+    }
+    .box2{
+        background-color: yellow;
+        position: relative;
+        top: -150px;
+        left: 50px;
+    }
+    .box3{
+        background-color: green;
+        position: absolute;
+        top: 130px;
+        left: 130px;
+    }
+    .box4{
+        background-color: red;
+        position: fixed;
+        top: 200px;
+        left: 200px;
+    }
+</style>
+<body>
+    <div class="content">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+</body>
+</html>
