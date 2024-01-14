@@ -287,5 +287,12 @@
 /* #endregion 主要内容区 */
 
 /* #region 秒杀 */
-
+.seckill img{
+  float: left;
+  margin-right: 11px;
+  margin-top: 10px;
+}
+.seckill img:last-child{
+  margin-right: 0;
+}
 /* #endregion 秒杀 */
