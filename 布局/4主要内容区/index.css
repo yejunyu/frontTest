@@ -1,0 +1,291 @@
+/* 基础设置 */
+.container {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+/* 浮动 */
+.leftfix {
+  float: left;
+}
+.rightfix {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* #region 顶部导航条start */
+.topbar {
+  height: 30px;
+  background-color: #ececec;
+}
+
+.welcome {
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  font-size: 0;
+}
+.welcome span,
+.welcome a {
+  font-size: 12px;
+}
+.welcome .topbar-hello {
+  margin-right: 28px;
+}
+
+.welcome .login {
+  padding-right: 10px;
+  border-right: 1px solid #666;
+}
+.welcome .register {
+  padding-left: 10px;
+}
+
+.topbar-nav .list {
+  height: 30px;
+  line-height: 30px;
+}
+
+.topbar-nav .list li {
+  float: left;
+}
+
+.topbar-nav .list li a {
+  border-right: 1px solid #666;
+  padding: 0 15px;
+}
+
+.topbar-nav .list li:first-child > a {
+  padding-left: 0;
+}
+.topbar-nav .list li:last-child > a {
+  padding-right: 0;
+  border: 0;
+}
+/* #endregion 顶部导航条end */
+
+/* #region 头部 */
+.page-header {
+  height: 120px;
+  background-color: skyblue;
+}
+.search form {
+  margin-top: 42px;
+  font-size: 0;
+}
+.search input {
+  height: 34px;
+  width: 508px;
+  border: 1px solid #dd302d;
+}
+.search button {
+  width: 80px;
+  height: 36px;
+  background-color: #dd302d;
+  vertical-align: top;
+  background-image: url("../images/assets/serch_icon.png");
+  background-repeat: no-repeat;
+  background-position: 28px 6px;
+}
+/* #endregion 头部 */
+
+/* #region 主导航 */
+.main-nav {
+  height: 48px;
+  border-bottom: 1px solid #dd302d;
+}
+.main-nav .all-types {
+  width: 190px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #dd302d;
+  text-align: center;
+}
+.main-nav ul li {
+  height: 48px;
+  line-height: 48px;
+  margin: 0 10px;
+  float: left;
+  color: #333;
+  font-size: 16px;
+}
+/* #endregion 主导航 */
+
+/* #region 主要内容区 */
+.main-content {
+  margin-top: 10px;
+}
+
+.main-content .slide-nav {
+  width: 190px;
+  height: 458px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.main-content .slide-nav li {
+  font-size: 14px;
+  height: 28px;
+  padding-left: 16px;
+}
+
+.main-content .slide-nav li:hover {
+  background-color: #dd302d;
+}
+.main-content .slide-nav li:hover > a {
+  color: #ececec;
+}
+
+.main-content .slide-nav li:hover .second-menu {
+  display: block;
+}
+.second-menu {
+  width: 680px;
+  height: 458px;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  padding-left: 20px;
+  display: none;
+}
+.second-menu dl {
+  height: 36px;
+  line-height: 36px;
+}
+.second-menu dl:first-child {
+  margin-top: 10px;
+}
+.second-menu dt {
+  width: 70px;
+  float: left;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.second-menu dd {
+  float: left;
+}
+.second-menu dd > a {
+  border-left: 1px solid #666;
+  padding: 0 10px;
+}
+
+/* banner */
+.main-content .banner {
+  width: 690px;
+  height: 458px;
+  margin: 0 10px;
+}
+
+/* slide-other */
+.main-content .slide-other {
+  width: 290px;
+  height: 458px;
+}
+
+.slide-other .message {
+  width: 260px;
+  height: 156px;
+  border: 1px solid #d9d9d9;
+  padding: 0 14px;
+}
+
+.slide-other .message .title {
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.slide-other .message .title span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.slide-other .message .title a {
+  font-size: 12px;
+}
+.slide-other .message .msg-list ul li{
+  height: 26px;
+  line-height: 26px;
+}
+
+.slide-other .other-nav {
+  width: 290px;
+  height: 290px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.slide-other .other-nav .other-nav-list:first-child{
+  margin-top: 16px;
+}
+
+.slide-other .other-nav .other-nav-list:nth-child(2){
+  margin: 17px 0;
+}
+
+.slide-other .other-nav .other-nav-list li{
+  float: left;
+  height: 70px;
+  width: 48px;
+  margin: 0 11px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slide-other .other-nav .other-nav-list li:first-child{
+  margin-left: 16px;
+}
+
+.other-nav-list .picture{
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/assets/精灵图-侧边功能.png");
+}
+
+.other-nav-list:nth-child(1) li:nth-child(1) .picture{
+  background-position: 0 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(2) .picture{
+  background-position: -48px 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(3) .picture{
+  background-position: -96px 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(4) .picture{
+  background-position: -144px 0;
+}
+.other-nav-list:nth-child(2) li:nth-child(1) .picture{
+  background-position: 0 -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(2) .picture{
+  background-position: -48px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(3) .picture{
+  background-position: -96px -48px;
+}
+.other-nav-list:nth-child(3) li:nth-child(4) .picture{
+  background-position: -144px -48px;
+}
+.other-nav-list:nth-child(3) li:nth-child(1) .picture{
+  background-position: 0 -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(2) .picture{
+  background-position: -48px -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(3) .picture{
+  background-position: -96px -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(4) .picture{
+  background-position: -144px -96px;
+}
+/* #endregion 主要内容区 */
+
+/* #region 秒杀 */
+
+/* #endregion 秒杀 */
