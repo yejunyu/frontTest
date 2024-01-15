@@ -27,6 +27,7 @@
   height: 30px;
   line-height: 30px;
   color: #666;
+  /* 让span距离为0 */
   font-size: 0;
 }
 .welcome span,
@@ -296,3 +297,58 @@
   margin-right: 0;
 }
 /* #endregion 秒杀 */
+
+/* #region 楼层 */
+.floor-nav{
+  height: 30px;
+  line-height: 30px;
+  margin-top: 48px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #dd302d;
+}
+
+.floor-nav span{
+  font-size: 20px;
+}
+
+.floor-nav ul li{
+  float: left;
+  font-size: 14px;
+}
+
+.floor-nav ul li a{
+  padding: 0 10px;
+  border-right: 1px solid #666;
+}
+
+.floor-nav ul li:first-child a{
+  padding-left: 0;
+}
+
+.floor-nav ul li:last-child a{
+  padding-right: 0;
+  border-right: 0;
+}
+.floor-nav ul li a:hover{
+  color: #dd302d;
+}
+
+.floor-info .item1{
+  width: 230px;
+  height: 432px;
+}
+.floor-info .item2{
+  width: 340px;
+  height: 432px;
+  background-color: blueviolet;
+}
+.floor-info .item3,.item4,.item5{
+  width: 206px;
+  height: 432px;
+  background-color: aqua;
+}
+.floor-info .item4{
+  border-left:1px solid #666 ;
+  border-right:1px solid #666 ;
+}
+/* #endregion 楼层 */
