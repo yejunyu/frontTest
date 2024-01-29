@@ -371,7 +371,7 @@
 .item4,
 .item5 {
   width: 206px;
-  height: 432px;
+  height: 431px;
   background-color: aqua;
 }
 
@@ -385,7 +385,7 @@
 .floor-info .item4 {
   border-left: 1px solid #666;
   border-right: 1px solid #666;
-  border-bottom: 1px solid #666 ;
+  border-bottom: 1px solid #ccc;
 }
 
 .item5 .item5-img1,
