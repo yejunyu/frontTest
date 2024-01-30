@@ -396,3 +396,51 @@
   border-right: 1px solid #ccc;
 }
 /* #endregion 楼层 */
+
+/* #region 底部 */
+footer{
+  margin-top: 48px;
+  background-color: #483E3E;
+  height: 440px;
+}
+.top-links .links-list{
+  margin-top: 48px;
+  width: 190px;
+  height: 176px;
+  color: white;
+  font-size: 14px;
+}
+
+footer hr {
+  margin-top: 22px;
+  margin-bottom: 47px;
+}
+
+/* 用margin 0 auto 不能居中,因为父元素没有给宽度 */
+.bottom-links{
+  /* text-align只能对行内块元素奏效所以下面要把ul块元素变成行内块 */
+  text-align: center;
+}
+.bottom-links .bottom-links-list{
+  display: inline-block;
+}
+.bottom-links .bottom-links-list li{
+  float: left;
+  color: white;
+  font-size: 12px;
+  padding: 0 26px;
+  text-align: center;
+  height: 18px;
+  border-right: 1px solid #eee;
+}
+
+.bottom-links .bottom-links-list li:last-child{
+  border: 0;
+}
+/* #endregion 底部 */
+.content-provider{
+  margin-top: 10px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
