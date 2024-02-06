@@ -1,12 +1,26 @@
 class Lists extends React.Component {
   render() {
-    console.log(this.props);
+    console.log("Lists");
     const { pokemons } = this.props;
+    // - 得换成驼峰形式
+    const imgCss = {
+      border: "1px solid darkorange",
+      borderRadius: "10px"
+    }
     return (
-      <ul>
-        {pokemons.map((i) => (
-          <li key={i.url}>{i.name}</li>
-        ))}
+      <ul className="ul-container">
+        {pokemons.map((p, i) => {
+          return (
+            <div key={p.url}>
+              <li>{p.name}</li>
+              <img
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.id}.png`}
+                style={imgCss}
+                srcset=""
+              />
+            </div>
+          );
+        })}
       </ul>
     );
   }
