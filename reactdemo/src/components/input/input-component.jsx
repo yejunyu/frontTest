@@ -1,5 +1,4 @@
-const Input = (props) => {
-  const { onChangeHandler } = props;
+const Input = ({onChangeHandler}) => {
   return <input type="search" onChange={onChangeHandler}></input>;
 };
 
